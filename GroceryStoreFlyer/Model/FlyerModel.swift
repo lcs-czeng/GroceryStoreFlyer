@@ -41,14 +41,14 @@ let thisWeeksFlyer = Flyer(
                 FoodItem(
                     name: "Porkloin Back Ribs",
                     image: "porkloin-back-ribs",
-                    price: "5.99$   /lb"
+                    price: "5.99$/lb"
                 ),
             ]
         ),
  
         Department(
             name: "Seafood",
-            icon: "fisher-animated",
+            icon: "fisherman-animated",
             items: [
                 FoodItem(
                     name: "Wild Pacific Halibut Fillets",
@@ -63,7 +63,7 @@ let thisWeeksFlyer = Flyer(
                 FoodItem(
                     name: "Clam Chowder",
                     image: "clam-chowder",
-                    price: "3.99$       /ea"
+                    price: "3.99$/ea"
                 ),
             ]
         ),

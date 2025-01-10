@@ -15,7 +15,14 @@ struct DepartmentsListView: View {
                 NavigationLink {
                     DepartmentDetailView(departmentToShow: currentDepartment)
                 } label: {
-                    Text(currentDepartment.name)
+                    HStack {
+                        Image(currentDepartment.icon)
+                            .resizable()
+                            .scaledToFit()
+                        Text(currentDepartment.name)
+                            .font(.system(size: 28))
+                            .padding()
+                    }
                 }
             }
             .navigationTitle("Weekly Flyer")
