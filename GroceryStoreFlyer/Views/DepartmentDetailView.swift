@@ -18,16 +18,18 @@ struct DepartmentDetailView: View {
                     Text(item.name)
                         .font(.system(size: 30))
                         .font(.headline)
+                        .fontWeight(.black)
                         .padding(.vertical, 5)
                         .italic()
                     Text(item.price)
-                        .fontWeight(.bold)
+                        .fontWeight(.ultraLight)
                         .font(.system(size: 45))
                 }
                 
                 Image(item.image)
                     .resizable()
                     .scaledToFit()
+                Text(item.description)
             }
         }
         .listStyle(.plain)
