@@ -14,10 +14,16 @@ struct DepartmentDetailView: View {
     var body: some View {
         List(departmentToShow.items) { item in
             VStack {
-                Text(item.name)
-                    .font(.system(size: 25))
-                    .font(.headline)
-                    .padding(.vertical, 5)
+                HStack {
+                    Text(item.name)
+                        .font(.system(size: 30))
+                        .font(.headline)
+                        .padding(.vertical, 5)
+                        .italic()
+                    Text(item.price)
+                        .fontWeight(.bold)
+                        .font(.system(size: 45))
+                }
                 
                 Image(item.image)
                     .resizable()
@@ -29,7 +35,6 @@ struct DepartmentDetailView: View {
         .navigationTitle(departmentToShow.name)
     }
 }
-
 #Preview {
     NavigationStack {
         DepartmentDetailView(departmentToShow: thisWeeksFlyer.departments[0])

@@ -16,8 +16,6 @@ struct DepartmentsListView: View {
                     DepartmentDetailView(departmentToShow: currentDepartment)
                 } label: {
                     Text(currentDepartment.name)
-                    
-                    
                 }
             }
             .navigationTitle("Weekly Flyer")
