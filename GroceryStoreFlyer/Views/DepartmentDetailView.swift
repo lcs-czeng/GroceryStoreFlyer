@@ -37,6 +37,9 @@ struct DepartmentDetailView: View {
                         .padding([.bottom, .trailing], 10)
                 }
                 Text(item.description)
+                    .padding(.top, 10)
+                    .padding(.horizontal, 5)
+                    .foregroundColor(.gray)
             }
         }
         .listStyle(.plain)
