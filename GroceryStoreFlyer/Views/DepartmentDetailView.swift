@@ -16,19 +16,26 @@ struct DepartmentDetailView: View {
             VStack {
                 HStack {
                     Text(item.name)
-                        .font(.system(size: 30))
+                        .font(.system(size: 35))
                         .font(.headline)
                         .fontWeight(.black)
                         .padding(.vertical, 5)
                         .italic()
-                    Text(item.price)
-                        .fontWeight(.ultraLight)
-                        .font(.system(size: 45))
                 }
-                
-                Image(item.image)
-                    .resizable()
-                    .scaledToFit()
+                ZStack(alignment: .bottomTrailing) {
+                    Image(item.image)
+                        .resizable()
+                        .scaledToFit()
+                        .border(.blue)
+                    
+                    Text(item.price)
+                        .fontWeight(.light)
+                        .font(.system(size: 30))
+                        .padding(8)
+                        .background(Color.red)
+                        .cornerRadius(20)
+                        .padding([.bottom, .trailing], 10)
+                }
                 Text(item.description)
             }
         }
